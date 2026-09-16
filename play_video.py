@@ -22,6 +22,8 @@ score = 0
 high_score = 0
 
 print("Fast Virtual Drum started. Press Q to exit.")
+cv2.namedWindow("Fast Virtual Drum", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Fast Virtual Drum", 1400, 900)
 
 while True:
     ret, frame = camera.read()
